@@ -583,7 +583,7 @@ You will need the server package for the Liberty Operations part of the lab. If 
 2. Create a backup directory and clone the repository 
  
         mkdir ~/Student/backup
-        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-Lab /home/techzone/Student/backup
+        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-Lab ~/home/itzuser/Student/backup
 
 3. Copy the server package to the assets directory
 
@@ -1108,7 +1108,7 @@ You will need the some of the created artifacts like configuration snippets for 
 2. If not already done, create a backup directory and clone the repository 
  
         mkdir ~/Student/backup
-        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-Lab /home/techzone/Student/backup
+        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-Lab /home/itzuser/Student/backup
 
 3. If not already done, copy the server package to the assets directory
 
