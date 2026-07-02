@@ -510,7 +510,7 @@ The generated maven pom by default does not generate a WAR file as it uses a “
 
         mvn liberty:run
 
-    The server starts and the configuration and applicaztion are copied over int the target directory.
+    The server starts and the configuration and application are copied over int the target directory.
     <kbd>![image059](./images/media/mvn_liberty_run.png)</kbd>
     Then wait until the command has completed.
 
