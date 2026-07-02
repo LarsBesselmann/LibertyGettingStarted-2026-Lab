@@ -386,7 +386,7 @@ In a terminal window, you would use Liberty in dev mode with maven using the com
 
 
 
-In the lab environment, the Liberty Tools Plugin has been installed into Visual Studio Code. Therefore you will use the integrated Liberty dashboard which will execute under the cover the related maven commands. 
+In the lab environment, the Liberty Tools Plugin has been installed into Visual Studio Code. Therefore, you will use the integrated Liberty dashboard which will execute under the cover the related maven commands. 
 
 1. In Visual Studio Code, expand the Liberty Dashboard.
 
@@ -652,7 +652,7 @@ You will now explore the Liberty server package to get a better understanding ho
     
     <kbd>![image066](./images/media/image066.png)</kbd>
 
-    This runs the server in the background and the output is written to files in the **test/wlp/bin/servers/defaultServer/logs** directory.
+    This runs the server in the background, and the output is written to files in the **test/wlp/bin/servers/defaultServer/logs** directory.
     
     To start the server in the foreground (so the console messages are displayed in the command window) you would use the command 
     
@@ -755,7 +755,7 @@ You will now modify the file **server.xml** which has been provided as part of t
     <kbd>![image082](./images/media/image082.png)</kbd>
 
      As mentioned in the comment, the httpEndpoint is by default not accessible from a remote client.
-     This is good from security point of view and works fine if the client is local to the server. But if you, for example, use a remote load balancer or a remote HTTP server, this will not work. So there will be likely situations where you want to allow access to the application from a remote client and you must add a host attribute. You will use the Liberty Tools configuration assistant to do this.
+     This is good from security point of view and works fine if the client is local to the server. But if you, for example, use a remote load balancer or a remote HTTP server, this will not work. So, there will be likely situations where you want to allow access to the application from a remote client, and you must add a host attribute. You will use the Liberty Tools configuration assistant to do this.
 
 3. Place the cursor at the end of the line **<httpEndpoint id="defaultHttpEndpoint"** and press **ENTER** to add another line. 
 
@@ -928,7 +928,7 @@ You will now use **includes** to structure the server configuration.
 
     As you can see, you could define the include file as optional, so Liberty would not throw an error if the include file is missing. 
 
-8. Click on **onConflict** to see the available attributes for that options. 
+8. Click on **onConflict** to see the available attributes for that option. 
 
     <kbd>![image100](./images/media/image100.png)</kbd>
 
@@ -956,7 +956,7 @@ You will now use **includes** to structure the server configuration.
 
 ### 5.4.2.3 Enable transport security
 
-Right now, you are not able to access Liberty via HTTPS. While the HTTPS port 9443 has been defined, SSL has not been enabled in Liberty. SSL can be enabled using the transport security feature. So the next step is to enable transport security and take a look at other related topics like keystores.
+Right now, you are not able to access Liberty via HTTPS. While the HTTPS port 9443 has been defined, SSL has not been enabled in Liberty. SSL can be enabled using the transport security feature. So, the next step is to enable transport security and take a look at other related topics like keystores.
 
 1. In the file **server.xml**, navigate the to featureManager section.
 
@@ -1058,7 +1058,7 @@ Right now, you are not able to access Liberty via HTTPS. While the HTTPS port 94
 
 ### 5.4.2.4 Backup the generated files
 
-You will re-use the generated configuration snippets and other assets in the next section of the lab. Therefore it is a good approach to create a snippet repository. Configuration snippets are typically hosted in a git repository or so, here you will use the folder **~/Student/assets**. You will also use the asset directory to store the application WAR file.
+You will re-use the generated configuration snippets and other assets in the next section of the lab. Therefore, it is a good approach to create a snippet repository. Configuration snippets are typically hosted in a git repository or so, here you will use the folder **~/Student/assets**. You will also use the asset directory to store the application WAR file.
 
 1. Copy the generated configuration files as well as the application war file into the assets directory.
 
@@ -1070,7 +1070,7 @@ You will re-use the generated configuration snippets and other assets in the nex
 
     <kbd>![image112](./images/media/image112a.png)</kbd>
 
-2. Verify that the assets directory contains the application WAR as well as the configuration files. It also contains the server package but this is no longer required.
+2. Verify that the assets directory contains the application WAR as well as the configuration files. It also contains the server package, but this is no longer required.
 
         ls ~/Student/assets
 
@@ -1214,7 +1214,7 @@ Here some of the Liberty specific variables can be used to customize the Liberty
 (see also https://www.ibm.com/docs/en/was-liberty/nd?topic=liberty-customizing-environment) 
 
 * **${wlp.install.dir}** - This configuration variable has an inferred location. The installation directory is always set to the parent of the directory containing the launch script or the parent of the /lib directory containing the target jar files.
-* **JVM\_ARGS** - This environment variable can be used to specify a list of command-line options, such as system properties or -X parameters, that are passed to the JVM when the server starts. Any values that contain spaces must be enclosed in quotes.
+* **JVM\_ARGS** - This environment variable can be used to specify a list of command-line options, such as system properties or -X parameters, which are passed to the JVM when the server starts. Any values that contain spaces must be enclosed in quotes.
 * **WLP\_USER\_DIR** - This environment variable can be used to specify an alternative location for **wlp.user.dir**. This variable must be an absolute path. If this variable is specified, the runtime environment looks for shared resources and server definitions in the specified directory. **WLP\_USER\_DIR** can be specified only in the **${wlp.install.dir}/etc/server.env** file because the purpose of this variable is to specify where the remaining configuration is located. After the remaining configuration is found and merged, no further configuration in a different location is expected, or supported
 *  **WLP\_OUTPUT\_DIR** - This environment variable can be used to specify an alternative location for server generated output such as logs, the workarea directory, and generated files. Files in the logs directory can include console.log, messages.log, and any generated FFDC files. Generated files can include server dumps that are created with the server dump or server javadump command. This variable must be an absolute path.
 
@@ -1287,7 +1287,7 @@ The **server create** command creates by default the user directory in a sub-dir
     <tr class="odd">
     <td><kbd><img src="./images/media/info.png" alt="sign-info" /></kbd></td>
     <td>
-    <p>If you want to change those port values, you could define them in the <strong>server.env</strong> file or <strong>bootstrap.properties</strong> file for example. <br> Alternatively you could define the related variable on the operating system level. 
+    <p>If you want to change those port values, you could define them in the <strong>server.env</strong> file or <strong>bootstrap.properties</strong> file for example. <br> Alternatively, you could define the related variable on the operating system level. 
     </p></td>
     </tr>
     </tbody>
@@ -1447,7 +1447,7 @@ Now you will deploy the simpleweb application by adding it to the Liberty server
     In the terminal window running tail, you can see that the application has been started.
     <kbd>![image140](./images/media/image140a.png)</kbd>
 
-11. So let's review how the application has been defined. Take a look at the application configuration that has been provided as snippet and copied over to the Liberty configuration directory.
+11. So, let's review how the application has been defined. Take a look at the application configuration that has been provided as snippet and copied over to the Liberty configuration directory.
 
         cat wlp_usr/servers/myServer/application-config.xml
 
@@ -1580,7 +1580,7 @@ In this case, you want to add/change the log level of the application server.
 
         rm wlp_usr/servers/myServer/logs/trace*.log
 
-    As you have seen, the logging component can be controlled through the server configuration and it is quite convenient to enable and disable tracing using configDropins.
+    As you have seen, the logging component can be controlled through the server configuration, and it is quite convenient to enable and disable tracing using configDropins.
 
     **Configure logging in the bootstrap.properties file**
 
