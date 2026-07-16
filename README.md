@@ -95,7 +95,14 @@ lab:
 ## 4. About the lab environment
 
 ### 4.1 Use an environment provided by IBM
-If you use a lab environment hosted by IBM, the software is already installed.
+As IBMer, you can request the related TechZone environment here:
+
+- Collection: https://techzone.ibm.com/collection/liberty-getting-started-labs-demos
+- Environment: **Application Modernization VM - for Liberty, AMA, IBM Bob**.
+
+If you use that lab environment in TechZone, the software is already installed.
+
+
 
 ### 4.2 How to set up your own environment
 <details>
